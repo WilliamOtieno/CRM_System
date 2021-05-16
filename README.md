@@ -8,6 +8,6 @@ This is project represents a simple CRM web application built with Django that h
 
 To run this project you will need to set your environment variables.
 
-1. Create a new file named `.env` inside the `djcrm` folder
-2. Copy all of the variables inside `djcrm/.template.env` and assign your own values to them
+1. Create a new file named `.env` inside the `Will_CRM` folder
+2. Copy all of the variables inside `Will_CRM/.template.env` and assign your own values to them
 3. Run `export READ_DOT_ENV_FILE=True` inside your terminal so that your environment variables file will be read.
