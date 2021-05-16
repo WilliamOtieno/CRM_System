@@ -1,10 +1,6 @@
+import dj_database_url
 from pathlib import Path
 import os
-<<<<<<< HEAD
-=======
-import environ
->>>>>>> d2bf924 (devops)
-
 
 
 DEBUG = False
@@ -25,7 +21,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+
     # Third party apps
     'crispy_forms',
     "crispy_tailwind",
@@ -53,7 +49,7 @@ ROOT_URLCONF = 'Will_CRM.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [ BASE_DIR / "templates" ],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -177,6 +173,5 @@ LOGGING = {
 
 TAILWIND_APP_NAME = 'theme'
 
-import dj_database_url
 prod_db = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(prod_db)
